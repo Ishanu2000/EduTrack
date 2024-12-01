@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="logo-container">
+      <img src="images/logo.png" alt="Student Management System Logo" class="logo">
+  </div>
+  <div class="nav-links">
+      <a href="student-list.php" class="view-student-btn">View Students</a>
+  </div>
+</nav>
+
+
+  <div class="container">
+        <h1>Student Management System</h1>
+        <form id="studentForm">
+            <label for="studentName">Name:</label>
+            <input type="text" id="studentName" required>
+            
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" required>
+            
+            <label for="studentEmail">Email:</label>
+            <input type="email" id="studentEmail" required>
+            
+            <label for="studentAge">Age:</label>
+            <input type="number" id="studentAge" required>
+            
+            <label for="studentYear">Year:</label>
+            <select id="studentYear" required>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+            </select>
+            
+            <label for="studentSemester">Semester:</label>
+            <select id="studentSemester" required>
+                <option value="1">Semester 1</option>
+                <option value="2">Semester 2</option>
+            </select>
+            
+            <label for="semesterGpa">Semester GPA:</label>
+            <input type="number" id="semesterGpa" step="0.01" min="0" max="4" required>
+            
+            <button type="submit">Add Student</button>
+        </form>
+
+  </div>
+
+  <footer class="footer">
+    <div>
+      <p>&copy; 2024 EduTrack. All rights reserved.</p>
+    </div>
+  </footer>
+      
+    <script src="main.js"></script>
+
+
+</body>
+
+
+</html>
